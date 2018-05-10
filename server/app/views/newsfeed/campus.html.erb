@@ -1,0 +1,10 @@
+<% content_for "sidebar" do %>
+	hey
+<% end %>
+
+<%= render "newsfeed/filters", filters: [["Everything", true], ["Announcements", false], ["Events", false]] %>
+<%= render "newsfeed/feed" %>
+
+<% content_for "right-sidebar" do %>
+	hey
+<% end %>

@@ -1,0 +1,9 @@
+<% content_for "sidebar" do render 'users/courses' end %>
+
+<%= render "newsfeed/post", prompt: "What are you working on?" %>
+<%= render "newsfeed/filters", filters: [["Everything", true], ["Announcements", false], ["Questions", false], ["&#9733;".html_safe , false]] %>
+<%= render "newsfeed/feed" %>
+
+<% content_for "right-sidebar" do %>
+	<%= render "calendars/upcoming" %>
+<% end %>

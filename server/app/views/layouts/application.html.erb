@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Skoole</title>
+	<%= stylesheet_link_tag "application" %>
+	<%= stylesheet_link_tag "newsfeed" %>
+	<%= stylesheet_link_tag params[:controller] %>
+	<%= javascript_include_tag "application" %>
+	<%= csrf_meta_tags %>
+</head>
+<body id="section-<%= params[:sk_section] %>">
+	
+	<div id="right-bg"></div>
+	
+	<div id="header">
+		<div class="page">
+			<div id="header-logo">
+				<%= link_to :root do %>
+					<h1>skoole<span class="network">gatech</span></h1>
+				<% end %>
+			</div>
+			<div id="header-left">
+				<%= link_to :root do %>
+					<div class="nav-item" id="nav-campus"><div class="arrow"></div></div>
+				<% end %>
+				<%= link_to :courses do %>
+					<div class="nav-item selected" id="nav-courses"><!--<p>Classes</p>--><div class="arrow"></div></div>
+				<% end %>
+				<%= link_to '#' do %>
+					<div class="nav-item" id="nav-friends"><div class="arrow"></div></div>
+				<% end %>
+			</div>
+			<div id="header-center">
+				<a href="#">
+					<div class="nav-item" id="nav-notifications"><div class="arrow"></div></div>
+				</a>
+				<a href="#">
+					<div class="nav-item" id="nav-messages"><div class="arrow"></div></div>
+				</a>
+				<a href="#">
+					<div class="nav-item" id="nav-calendar"><span class="date">19</span><div class="arrow"></div></div>
+				</a>
+			</div>
+			<div id="header-right">
+				<!--<div class="nav-item" id="account"><%= image_tag "account.png" %></div>-->
+			</div>
+		</div>
+	</div>
+	
+	<div class="page" id="wrapper">
+		<div id="sidebar">
+			<%= yield "sidebar" %>
+		</div>
+		<div id="content-wrapper">
+			<div id="content">
+				<%= yield %>
+			</div>
+		</div>
+		<div id="right-sidebar-wrapper">
+			<div id="right-sidebar">
+				<%= yield "right-sidebar" %>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

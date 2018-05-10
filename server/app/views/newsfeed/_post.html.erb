@@ -1,0 +1,10 @@
+<div id="new-post">
+
+	<%= form_for @new_post do |f| %>
+		<%= image_tag "profile/avatar-small.png", class: "avatar small" %>
+		<%= f.text_area :text, class: 'post-text' %>
+		<%= f.submit "Share", class: 'submit-post button' %>
+		<div class="clear"></div>
+	<% end %>
+	
+</div>

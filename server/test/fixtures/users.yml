@@ -1,0 +1,20 @@
+ryan:
+    type: Student
+    uid: 902582014
+    username: ryangomba
+    first_name: Ryan
+    last_name: Gomba
+    
+doug:
+    type: Student
+    uid: 12345
+    username: dougblack
+    first_name: Doug
+    last_name: Black
+
+bill:
+    type: Professor
+    uid: 01
+    username: billsmith
+    first_name: Bill
+    last_name: Smith

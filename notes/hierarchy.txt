@@ -1,0 +1,39 @@
+COURSES
+	Discussion
+		Posts (Student -> Student)
+		Annoucements (Prof -> Student)
+		Q&A (Student -> Prof)
+	Assignments
+		Assignments
+		Grades
+	Resources
+		Wikis
+		Files
+		Links
+	Info
+		Syllabus
+		Contact info
+		Roster
+		Schedule
+		
+GROUPS
+	Chat
+	Collaborative docs
+
+MESSAGES
+	from other students
+	from professors
+	from the college
+
+CALENDAR
+
+--------------------
+
+STARRED
+NOTIFICATIONS
+
+--------------------
+
+PROFILE
+SETTINGS
+LOG OUT

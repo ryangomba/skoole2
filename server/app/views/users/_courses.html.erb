@@ -1,0 +1,53 @@
+<h2>Classes</h2>
+
+<ul id="courses">
+
+	<a href="/courses/all/<%= @course_module %>">
+		<li id="course-all">
+			<div class="mark"></div>
+			<p>All</p>
+		</li>
+	</a>
+
+	<% @current_user.courses.each do |c| %>
+	<a href="/courses/<%= c.id %>/<%= @course_module %>">
+		<li id="course-<%= c.id %>">
+			<div class="mark"></div>
+			<p><%= c %></p>
+		</li>
+	</a>
+	<% end %>
+
+</ul>
+
+<ul id="course-modules">
+	<a href="/courses/<%= @course_id %>">
+		<li id="course-module-">
+			<%= image_tag "icons/chats-16.png" %>
+			<p>Discussion</p>
+		</li>
+	</a>
+	<a href="/courses/<%= @course_id %>/assignments">
+		<li id="course-module-assignments">
+			<%= image_tag "icons/check-16.png" %>
+			<p>Assignments</p>
+		</li>
+	</a>
+	<a href="/courses/<%= @course_id %>/resources">
+		<li id="course-module-resources">
+			<%= image_tag "icons/resources-16.png" %>
+			<p>Resources</p>
+		</li>
+	</a>
+	<a href="/courses/<%= @course_id %>/info">
+		<li id="course-module-info">
+			<%= image_tag "icons/info-16.png" %>
+			<p>Info</p>
+		</li>
+	</a>
+</ul>
+
+<script>
+$("#course-<%= @course_id %>").addClass('selected');
+$("#course-module-<%= @course_module %>").addClass('selected');
+</script>

@@ -1,0 +1,11 @@
+<% content_for "sidebar" do %>
+	hey
+<% end %>
+
+<%= render "newsfeed/post", prompt: "What's new?" %>
+<%= render "newsfeed/filters", filters: [["Everything", true], ["Friends", false], ["Groups", false]] %>
+<%= render "newsfeed/feed" %>
+
+<% content_for "right-sidebar" do %>
+	hey
+<% end %>

@@ -1,0 +1,20 @@
+problem_set_1:
+    course: cs2340
+    title: Problem Set 1
+    description: Good luck!
+    ends_at: <%= DateTime.new(2011,12,1,15,25,12) %>
+    weight: 100
+
+problem_set_2:
+    course: cs2340
+    title: Problem Set 2
+    description: ps2.
+    ends_at: <%= DateTime.new(2012,2,15,15,25,12) %>
+    weight: 50
+    
+final_project_proposal:
+    course: cs2340
+    title: Final Project Proposal
+    description: Make it good.
+    ends_at: <%= DateTime.new(2012,1,15,15,25,12) %>
+    weight: 50

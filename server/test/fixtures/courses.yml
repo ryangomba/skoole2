@@ -1,0 +1,17 @@
+cs2340:
+    department: CS
+    number: 2340
+    section: A
+    users: ryan, doug, bill
+    
+cs4480:
+    department: CS
+    number: 4480
+    section: A
+    users: ryan, bill
+
+math3215:
+    department: MATH
+    number: 3215
+    section: A
+    users: ryan, doug, bill

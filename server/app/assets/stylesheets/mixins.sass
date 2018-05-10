@@ -1,0 +1,60 @@
+/* MIXINS */
+
+@mixin border-radius($radius)
+	border-radius: $radius
+	-webkit-border-radius: $radius
+	-moz-border-radius: $radius
+	-o-border-radius: $radius
+@mixin border-radii($radius_tl, $radius_tr, $radius_br, $radius_bl)
+	border-top-left-radius: $radius_tl
+	-webkit-border-top-left-radius: $radius_tl
+	-moz-border-top-left-radius: $radius_tl
+	-o-border-top-left-radius: $radius_tl
+	border-top-right-radius: $radius_tr
+	-webkit-border-top-right-radius: $radius_tr
+	-moz-border-top-right-radius: $radius_tr
+	-o-border-top-right-radius: $radius_tr
+	border-bottom-right-radius: $radius_br
+	-webkit-border-bottom-right-radius: $radius_br
+	-moz-border-bottom-right-radius: $radius_br
+	-o-border-bottom-right-radius: $radius_br
+	border-bottom-left-radius: $radius_bl
+	-webkit-border-bottom-left-radius: $radius_bl
+	-moz-border-bottom-left-radius: $radius_bl
+	-o-border-bottom-left-radius: $radius_bl
+@mixin drop-shadow($x, $y, $s, $c)
+	box-shadow: $x $y $s $c
+	-webkit-box-shadow: $x $y $s $c
+	-moz-box-shadow: $x $y $s $c
+	-o-box-shadow: $x $y $s $c
+	box-shadow: $x $y $s $c
+@mixin drop-inner-shadow($x1, $y1, $s1, $c1, $x2, $y2, $s2, $c2)
+	box-shadow: $x1 $y1 $s1 $c1, inset $x2 $y2 $s2 $c2
+	-webkit-box-shadow: $x1 $y1 $s1 $c1, inset $x2 $y2 $s2 $c2
+	-moz-box-shadow: $x1 $y1 $s1 $c1, inset $x2 $y2 $s2 $c2
+	-o-box-shadow: $x1 $y1 $s1 $c1, inset $x2 $y2 $s2 $c2
+	box-shadow: $x1 $y1 $s1 $c1, inset $x2 $y2 $s2 $c2
+@mixin inner-shadow($x, $y, $s, $c)
+	box-shadow: inset $x $y $s $c
+	-webkit-box-shadow: inset $x $y $s $c
+	-moz-box-shadow: inset $x $y $s $c
+	-o-box-shadow: inset $x $y $s $c
+	box-shadow: inset $x $y $s $c
+@mixin gradient-2($c1, $p1, $c2, $p2)
+	background: $c1
+	background: -moz-linear-gradient(top, $c1 $p1, $c2 $p2)
+	background: -webkit-gradient(linear, left top, left bottom, color-stop($p1,$c1), color-stop($p2,$c2))
+	background: -webkit-linear-gradient(top, $c1 $p1, $c2 $p2)
+	background: -o-linear-gradient(top, $c1 $p1, $c2 $p2)
+	background: -ms-linear-gradient(top, $c1 $p1, $c2 $p2)
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$c1', endColorstr='$c2', GradientType=0 )
+	background: linear-gradient(top, $c1 $p1, $c2 $p2)
+@mixin gradient-3($c1, $p1, $c2, $p2, $c3, $p3)
+	background: $c1
+	background: -moz-linear-gradient(top, $c1 $p1, $c2 $p2, $c3 $p3)
+	background: -webkit-gradient(linear, left top, left bottom, color-stop($p1,$c1), color-stop($p2,$c2), color-stop($p3,$c3))
+	background: -webkit-linear-gradient(top, $c1 $p1, $c2 $p2, $c3 $p3)
+	background: -o-linear-gradient(top, $c1 $p1, $c2 $p2, $c3 $p3)
+	background: -ms-linear-gradient(top, $c1 $p1, $c2 $p2, $c3 $p3)
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$c1', endColorstr='$c3', GradientType=0 )
+	background: linear-gradient(top, $c1 $p1, $c2 $p2, $c3 $p3)

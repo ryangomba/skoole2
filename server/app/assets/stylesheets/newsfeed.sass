@@ -1,0 +1,153 @@
+@import "vars"
+
+#new-post
+	position: relative
+	margin-bottom: 30px
+	width: 520px
+#new-post img, input, textarea
+	float: left
+	margin-right: 10px
+#new-post input:not(.submit-post), textarea
+	padding: 9px 5px 7px 5px
+	border: solid 1px #ccc
+	color: #999
+#new-post textarea.post-text
+	margin-right: 15px
+	width: 358px
+	max-width: 370px
+	padding: 9px 10px
+	height: 16px
+	max-height: 16px
+	//height: 50px
+#new-post input.submit-post
+	margin-right: 0px
+	border: none
+
+ul#filters
+	li
+		font-size: 12px
+		display: inline-block
+		position: relative
+		top: 1px
+		padding: 7px 12px
+		border-top-left-radius: 2px
+		border-top-right-radius: 2px
+		background-color: rgba(0,0,0,0.05)
+		border: solid 1px #ccc
+		&:hover
+			cursor: pointer
+			background-color: rgba(0,0,0,0.1)
+		&.selected
+			border: solid 1px $skoole-purple
+			background-color: $skoole-purple
+			color: #fff
+.line
+	width: 510px
+	border-bottom: solid 1px #ccc
+	margin-bottom: 35px
+
+#posts
+	
+.post
+	position: relative
+	padding-top: 25px
+	margin-bottom: 40px
+	font-size: 13px
+	width: 500px
+	img.avatar
+		position: absolute
+		top: 0px
+		left: 0px
+	h3, h4
+		text-shadow: 0px 2px 0px #fff
+	h3
+		font-size: 15px
+		position: absolute
+		top: 2px
+		left: 70px
+		color: #777
+		text-shadow: 0px 1px 0px #fff
+		span.context
+			font-size: 13px
+		a
+			font-weight: bold
+			color: $skoole-purple
+	.post-box
+		margin-left: 70px
+		//border-top-left-radius: 3px
+		//border-top-right-radius: 3px
+		//border-bottom-left-radius: 3px
+		//box-shadow: 0px 2px 0px #fff
+		.post-text
+			//font-weight: bold
+			padding: 0px 0px 8px 0px
+			border-bottom: dotted 1px #ccc
+			margin-bottom: 10px
+			//background-color: #fff
+			//border-top-left-radius: 3px
+			//border-top-right-radius: 3px
+			//border-bottom-left-radius: 3px
+			p
+				line-height: 18px
+		.post-actions
+			color: #666
+			font-size: 12px
+			span.divider
+				padding: 0px 4px
+	.comments
+		.comment
+			//box-shadow: inset 0px 0px 2px #ccc
+			margin-left: 55px
+			//background-color: #fff
+			//border: solid 1px #ccc
+			border-top: none
+			padding: 8px 0px 0px 0px
+			position: relative
+			&:first-child
+				margin-top: 4px
+				//box-shadow: inset 0px 1px 1px #ccc
+			img.avatar
+				position: absolute
+				top: 8px
+				left: -25px
+			.comment-text
+				margin-left: 25px
+				padding-right: 15px
+				p
+					font-size: 12px
+					line-height: 18px
+					margin-bottom: 2px
+					&.comment-timenote,
+					span.comment-timenote
+						text-shadow: 0px 2px 0px #fff
+						color: #999
+		
+#upcoming-events
+	width: 100%
+	padding-top: 15px
+	border-top: solid 1px #fff
+	.upcoming-event
+		position: relative
+		margin-bottom: 15px
+		//border-bottom: solid 1px #ccc
+		//border-top: solid 1px #fff
+		&:first-child
+			//border-top: solid 1px #ccc
+		div.status
+			position: absolute
+			top: 2px
+			width: 14px
+			height: 14px
+			border-radius: 7px
+			background-color: #d49590
+		h3
+			font-size: 13px
+			margin-left: 24px
+			font-weight: bold
+			margin-bottom: 7px
+			text-shadow: 0px 1px 0px #fff
+		p
+			font-size: 12px
+			margin-left: 24px
+			span.time
+				color: #999

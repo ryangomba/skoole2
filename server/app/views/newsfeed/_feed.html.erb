@@ -1,0 +1,43 @@
+<div id="posts">
+	
+	<% @posts.each do |p| %>
+
+	<div class="post">
+		<%= image_tag "profile/avatar.png", class: "avatar medium" %>
+		<h3 class="profile-link">
+			<a class="profile" href="#"><%= p.user.full_name %></a>
+			<% if @course.nil? && p.course %><span class="context">&bull; <%= p.course %></span><% end %>
+		</h3>		
+		<div class="post-box">
+			<div class="post-text">
+				<p><%= p.text %></p>
+			</div>
+			<div class="post-actions">
+				<a href="#">Respond</a>
+				<span class="divider">&bull;</span>
+				<a href="#">Follow</a>
+				<span class="divider">&bull;</span>
+				<span class="timenote"><%= timenote(p.created_at) %></span>
+			</div>
+		</div>
+		<!--<div class="comments">
+			<div class="comment">
+				<%= image_tag "profile/avatar-small.png", class: "avatar small" %>
+				<div class="comment-text">
+					<p><a class="profile" href="#">Bobby Smith</a> Does anyone have an HD camcorder I can borrow? We’re trying to make a demo film for our <a href="">Final Project.</a> Let me know!</p>
+					<p class="comment-timenote">30 seconds ago</p>
+				</div>
+			</div>
+			<div class="comment">
+				<%= image_tag "profile/avatar-small.png", class: "avatar small" %>
+				<div class="comment-text">
+					<p><a class="profile" href="#">Bobby Smith</a> Does anyone have an HD camcorder I can borrow? We’re trying to make a demo film for our <a href="">Final Project.</a> Let me know!</p>
+					<p class="comment-timenote">30 seconds ago</p>
+				</div>
+			</div>
+		</div>-->
+	</div>
+	
+	<% end %>		
+			
+</div>

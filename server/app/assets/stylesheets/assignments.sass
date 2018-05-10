@@ -1,0 +1,52 @@
+@import "vars"
+
+.assignments
+	margin: 15px 0px 35px 0px
+	border-top: solid 1px #ccc
+	border-bottom: solid 1px #fff
+	.assignment
+		position: relative
+		padding: 14px 0px 16px 0px
+		border-bottom: solid 1px #ccc
+		border-top: solid 1px #fff
+		&:hover
+			cursor: pointer
+			background-color: rgba(0,0,0,0.02)
+		&.selected
+			border-top: solid 1px #ecebea
+			background-color: rgba(0,0,0,0.05)
+		div
+			display: inline-block
+			text-shadow: 0px 1px 0px #fff
+		.status
+			position: relative
+			top: 2px
+			width: 14px
+			height: 14px
+			margin: 0px 10px
+			border-radius: 7px
+			&.overdue
+				background-color: $pale-red
+			&.unfinished
+				background-color: $pale-orange
+			&.completed
+				background-color: $pale-green
+			&.graded
+				background-color: $pale-blue
+		.title
+			width: 350px
+			font-weight: bold
+			span.light
+				font-weight: normal
+		.due
+			width: 130px
+			text-align: right
+			color: #666		
+			
+#right-sidebar
+	p
+		margin: 15px 0px
+		&.description
+			font-size: 13px
+			line-height: 18px
+			color: #666
